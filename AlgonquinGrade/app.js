@@ -12,6 +12,8 @@ require('dotenv').config();
 const indexRouter = require('./routes/page');
 const authRouter = require('./routes/auth');
 const pokemonListRouter = require('./routes/pokemonList');
+const pokemonDB = require('./routes/pokemonDB');
+//pokemonDB();
 
 const app = express();
 sequelize.sync();
