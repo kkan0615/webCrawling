@@ -3,6 +3,34 @@
     <head>
     <head>
     <body>
-        <h1>hi</h1>
+        <a href="/list/addPokemon">포켓몬추가</a>
+            <table class="pokemon-list">
+                <tr>
+                    <th>도감번호</th>
+                    <th>이름</th>
+                    <th>타입 1</th>
+                    <th>타입 2</th>
+                <% list.forEach(pokemon => { %>
+                </tr>
+                    <td><%= pokemon.bookId %></td>
+                    <td><%= pokemon.name %></td>
+                    <td><%= pokemon.typeId %></td>
+                    <td><%= pokemon.typeTwoId %></td>
+                <tr>
+                <% });  %>
+                </tr>
+            </table>
+
+        <style>
+            .pokemon-list {
+                width: 80%;
+                border: 1px dotted gray;
+                text-align: center;
+            }
+            .pokemon-list th {
+                background: #EB9E29;
+                color: white;
+            }
+        </style>
     </body>
 </html>

@@ -1,0 +1,8 @@
+INSERT INTO Types (name, color, createdAt, updatedAt)
+VALUES ('풀', '#ffffff', now(), now());
+
+INSERT INTO Types (name, color, createdAt, updatedAt)
+VALUES ('독', '#ffffff', now(), now());
+
+INSERT INTO Pokemons (bookId, image, name, createdAt, updatedAt, typeId, typeTwoId)
+VALUES ('001', 'Image', '이상해씨', now(), now(), 1, 2);

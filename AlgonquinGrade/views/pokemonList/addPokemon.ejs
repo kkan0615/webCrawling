@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <head>
+    <body>
+        <div class="join">
+            <form method="POST" action="/list/addPokemon">
+                <label for="name">이름</label>
+                <input type="text" name="name"><br>
+                <label for="bookNum">도감번호</label>
+                <input type="text" name="bookNum" id="">
+                <select name="type_one" id="">
+                    <% types.forEach(type => { %>
+                        <option value="<%= type.id %>"> <%= type.name %> </option>
+                    <% }); %>
+                </select>
+                <select name="type_two" id="">
+                    <option value="null">없음</option>
+                    <% types.forEach(type => { %>
+                        <option value="<%= type.id %>"> <%= type.name %> </option>
+                    <% }); %>
+                </select> <br>
+                <button type="submit">submit</button>
+                <button type="reset">rest</button>
+            </form>
+        </div>
+    </body>
+</html>
